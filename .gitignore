@@ -1,0 +1,7 @@
+# python
+.DS_Store
+venv/
+venv/*
+.vscode/
+.vscode/*
+config.yml
