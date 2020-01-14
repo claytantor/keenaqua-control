@@ -1,0 +1,14 @@
+[Unit]
+Description=keenaqua
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/share/hack/keenauqua-control/venv/bin/python -u /home/pi/share/hack/keenauqua-control/app.py --config /home/pi/share/hack/keenauqua-control/config.yml
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=keenaqua
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
