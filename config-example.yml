@@ -1,0 +1,29 @@
+keenaqua-scheduler:
+  devices:
+    - name: "seed-lights"
+      relay_name: "GREEN_LED"
+      schedule:
+        - value: 3
+          rate: "minutes"
+          command: 'on'
+        - value: 5
+          rate: "minutes"
+          command: 'off'
+    - name: "heater"
+      relay_name: "RED_LED"
+      schedule:
+        - value: 5
+          rate: "minutes"
+          command: 'on'
+        - value: 3
+          rate: "minutes"
+          command: 'off'
+    - name: "grow-lights"
+      relay_name: "BLUE_LED"
+      schedule:
+        - value: 7
+          rate: "minutes"
+          command: 'on'
+        - value: 3
+          rate: "minutes"
+          command: 'off'

@@ -3,7 +3,7 @@ Description=keenaqua
 After=multi-user.target
 
 [Service]
-ExecStart=/home/pi/share/hack/keenauqua-control/venv/bin/python -u /home/pi/share/hack/keenauqua-control/app.py --config /home/pi/share/hack/keenauqua-control/config.yml
+ExecStart=/home/pi/data/github.com/claytantor/keenaqua-control/venv/bin/python -u /home/pi/data/github.com/claytantor/keenaqua-control/app.py --config /home/pi/data/github.com/claytantor/keenaqua-control/config.yml
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=keenaqua
